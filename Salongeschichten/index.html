@@ -177,13 +177,11 @@
 			<p data-ui="say"></p>
 		</div>
 		<div data-ui="quick-menu" class="align-right">
-			<span data-action="back"><span class="fa fa-arrow-left"></span> <span data-string="Back">Back</span></span>
-			<span data-action="distraction-free"><span class="fa fa-eye" data-action="distraction-free"></span> <span data-string="Hide" data-action="distraction-free">Hide</span></span>
-			<span data-action="auto-play"><span class="fa fa-play-circle" data-action="auto-play"></span> <span data-string="AutoPlay" data-action="auto-play">Auto</span></span>
-			<span data-action="open-menu" data-open="save"><span class="fa fa-save" data-action="open-menu" data-open="save"></span> <span data-string="Save" data-action="open-menu" data-open="save">Save</span></span>
-			<span data-action="open-menu" data-open="load"><span class="fa fa-undo" data-action="open-menu" data-open="load"></span> <span data-string="Load" data-action="open-menu" data-open="load">Load</span></span>
-			<span data-action="open-menu" data-open="settings"><span class="fa fa-gear" data-action="open-menu" data-open="settings"></span> <span data-string="Settings" data-action="open-menu" data-open="settings">Settings</span></span>
-			<span data-action="end"><span class="fa fa-times-circle-o" data-action="end"></span> <span data-string="Quit" data-action="end">Quit</span></span>
+			<span data-action="distraction-free"><span class="fa fa-eye" data-action="distraction-free"></span> <span data-string="Hide" data-action="distraction-free">Ausblenden</span></span>
+			<span data-action="open-menu" data-open="save"><span class="fa fa-save" data-action="open-menu" data-open="save"></span> <span data-string="Save" data-action="open-menu" data-open="save">Speichern</span></span>
+			<span data-action="open-menu" data-open="load"><span class="fa fa-undo" data-action="open-menu" data-open="load"></span> <span data-string="Load" data-action="open-menu" data-open="load">Spielstand laden</span></span>
+			<span data-action="open-menu" data-open="settings"><span class="fa fa-gear" data-action="open-menu" data-open="settings"></span> <span data-string="Settings" data-action="open-menu" data-open="settings">Einstellungen</span></span>
+			<span data-action="end"><span class="fa fa-times-circle-o" data-action="end"></span> <span data-string="Quit" data-action="end">Beenden</span></span>
 		</div>
 	</section>
 
@@ -202,9 +200,10 @@
 
 		<div class="vertical align-right bottom animated bounceIn" data-ui="inner-menu">
 			<button data-action="start" data-string="Start">Start</button>
-			<button data-action="open-menu" data-open="load" data-string="Load">Load</button>
-			<button data-action="open-menu" data-open="settings" data-string="Settings">Settings</button>
-			<button data-action="open-menu" data-open="help" data-string="Help">Help</button>
+			<button data-action="open-menu" data-open="load" data-string="Load">Spielstand laden</button>
+			<button data-action="open-menu" data-open="settings" data-string="Settings">Einstellungen</button>
+			<button data-action="open-menu" data-open="Info" data-string="Help">Hilfe</button>
+			<button data-action="open-menu" data-open="Info" data-string="Info">Info</button>
 			<button data-action="open-menu" data-open="impressum" data-string="Impressum">Quellen</button>
 		</div>
 	</section>
@@ -294,12 +293,24 @@
 		<div class="align-left padded-1">
 			<p data-string="AdvanceHelp">To advance through the game, click anywhere on the game screen or press the space key.</p>
 			<h3 data-string="QuickButtons">Quick Menu Buttons</h3>
-			<p><span class="fa fa-arrow-left"></span> <span data-string="BackButton">Back.</span></p>
-			<p><span class="fa fa-eye"></span> <span data-string="HideButton">Hide Text.</span></p>
-			<p><span class="fa fa-save"></span> <span data-string="SaveButon">Open the Save Screen.</span></p>
-			<p><span class="fa fa-undo"></span> <span data-string="LoadButton">Open the Load Screen.</span></p>
-			<p><span class="fa fa-gear"></span> <span data-string="SettingsButton">Open the Settings Screen.</span></p>
-			<p><span class="fa fa-times-circle-o"></span> <span data-string="QuitButton">Quit Game.</span></p>
+			<p><span class="fa fa-eye"></span> <span data-string="HideButton">Ausblenden</span></p>
+			<p><span class="fa fa-save"></span> <span data-string="SaveButon">Speicherbildschirn öffnen</span></p>
+			<p><span class="fa fa-undo"></span> <span data-string="LoadButton">Ladebildschirm öffnen.</span></p>
+			<p><span class="fa fa-gear"></span> <span data-string="SettingsButton">Einstellungsbildschirm öffnen.</span></p>
+			<p><span class="fa fa-times-circle-o"></span> <span data-string="QuitButton">Spiel beenden.</span></p>
+		</div>
+	</section>
+
+	<!--Info Screen -->
+	<section data-menu="Info" data-background="">
+		<button class="fa fa-arrow-left top left" data-action="back"></button>
+		<h2 data-string="Info">Info</h2>
+		<div data-ui="textinfo">
+			<br>Schlüpfe in die Rolle der Herzogin Anna Dorothea von Kurland und werde ihrer Rolle als Salondame gerecht.</br>
+			<br>Sie ist stets darauf bedacht ihren Gäste einen schönen Aufenthalt zu bereiten. </br>
+			<br>Im Dialog erfährst du wie du sie glücklich machen kannst. Beantworte Dorotheas Frage zu den Vorlieben oder Wünschen ihre Gäste. </br>
+			<br>Klicke dazu einfach auf das passende Objekt aus dem “Vorratsschrank” der Herzogin. Du hast mehrere Versuche. </br>
+			<br>Viel Spaß! </br>
 		</div>
 	</section>
 

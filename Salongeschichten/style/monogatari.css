@@ -125,7 +125,7 @@ select {
 #game img {
 	position: absolute;
 	max-height: 100%;
-        
+
 }
 
 
@@ -429,6 +429,15 @@ textarea {
 
 
 [data-menu="impressum"] {
+    background-image: url("../img/papier_hg.jpg");
+}
+[data-menu="Info"] {
+    background-image: url("../img/papier_hg.jpg");
+}
+[data-menu="settings"] {
+    background-image: url("../img/papier_hg.jpg");
+}
+[data-menu="load"] {
     background-image: url("../img/papier_hg.jpg");
 }
 

@@ -144,18 +144,18 @@ const characters = {
 let script = {
 	// The game starts here.
 	"Start": [
+		"play music Theme loop",
 		"scene einleitung with fadeIn",
 		 "Ein Tag im Schloss Löbichau beginnt.",
 		 "Die Herzogin Anna Dorothea von Kurland trifft die letzten Vorbereitungen, um ihrer Rolle als Salondame gerecht zu werden..",
 		 "Alle Gäste zählen auf ihre Qualitäten als Gastgeberin, denn Dorothea ist bekannt dafür, dass man bei ihr wunschlos glücklich ist.",
-		 "Weltgewandt wie sie war, fiel es ihr leicht, einflussreiche Staatsmänner, Dichter, Künstler, Bürgerliche sowie den höchsten gesellschaftlichen Kreisen Europas eine angenehme Zeit zu bereiten - denn unter ihrem Dach waren alle Freunde."
-		 ,
+		 "Weltgewandt wie sie war, fiel es ihr leicht, einflussreiche Staatsmänner, Dichter, Künstler, Bürgerliche sowie den höchsten gesellschaftlichen Kreisen Europas eine angenehme Zeit zu bereiten - denn unter ihrem Dach waren alle Freunde." ,
 	 	"scene background with fadeIn",
 		"d Ich freue mich schon auf meine Gäste! Die ersten werden bald eintreffen - und einjeder mit einer anderen Vorliebe.",
 		"d Mal schauen, ob schon alles in meinem Vorratsschrank vorhanden ist.",
 		"play sound Schrank",
 		"show Inventar center with fadeIn",
-		"d Ah... Es ist für alles gesorgt. Egal ob Dame oder Herr, meinen Gästen sollte ich mit diesen Gegenständen alle Wünsche erfüllen.",
+		"d Ah... Ein Tintengeschirr mit Feder, ein köstlicher Apfel, ein Stammbuch, Notenblätter, das Modell eines Tempels aus Kork sowie eine antike Vase...Es ist für alles gesorgt. Egal ob Dame oder Herr [...]",
 		"stop sound",
 		"jump WelkerScene"
 	],
@@ -186,7 +186,7 @@ let script = {
 	],
 	// Item auswählen = Apflel richti
 	"FirstChoice": [
-		"d Wähle das passende Item aus.",
+		"d Was wird wohl dem edlen Rössern schmecken? Wähle das passende Objekt aus!",
 		{"Choice":{
     		"Apfel":{
         	"Text": "Apfel",
@@ -232,7 +232,7 @@ let script = {
 	],
 	// Item muss ausgewählt werden = Vase richtig
 	"SecondChoice": [
-		"d Wähle das passende Item aus.",
+		"d Nun brauche ich etwas das typisch Antike ist? Wähle das passende Objekt aus!",
 				{"Choice":{
 		    		"Apfel":{
 		        	"Text": "Apfel",
@@ -288,7 +288,7 @@ let script = {
 		],
 	// Item muss ausgewählt werden = Korkmodell richtig
 	"ThirdChoice": [
-		"d Wähle das passende Item aus.",
+		"d Der Herzog ist ein Sammler durch und durch. Er hat Figuren aus Porzellan und Modelle aus Wachs. Was fehlt ihm wohl noch? Wähle das passende Objekt aus!",
 			{"Choice":{
 				"Apfel":{
 				"Text": "Apfel",
@@ -334,7 +334,7 @@ let script = {
 	],
 	// Item muss ausgewählt werden = Tintenfass richtig
 	"FourthChoice": [
-		"d Wähle das passende Item aus.",
+		"d Was  braucht man um seine Ideen niederzuschreiben? Wähle das richtige Objekt aus!",
 			{"Choice":{
 				"Apfel":{
 				"Text": "Apfel",
@@ -364,10 +364,10 @@ let script = {
 	],
 	"ElisaScene2": [
 			"d Kein Grund zur Sorge, ich habe erst neue Schreibfedern und Tinte von Herrn Goethe bei seinem letzten Besuch geschenkt bekommen. Diese könnt ihr gern benutzen.",
-			"e Dorothea, ihr seid mal wieder meine Rettung. Nirgendwo anders wird so gut für seine Gäste gesorgt wie in eurem Salon.",
 			//Erhählt Karikatur
-			"show KarikaturH",
-			"hide KarikaturH",
+			"show KarikaturE",
+			"e Dorothea, ihr seid mal wieder meine Rettung. Nirgendwo anders wird so gut für seine Gäste gesorgt wie in eurem Salon.",
+			"hide KarikaturE",
 			"jump JosephScene"
 	],
 
@@ -383,7 +383,7 @@ let script = {
 
 	// Item muss ausgewählt werden = Stammbuch richtig
 	"FifthChoice": [
-		"d Wähle das passende Item aus.",
+		"d Da gibt es doch ein Buch in welches Freunde und Bekannte Widmungen, Wappen, kleine Bilder oder Gedichte eintragen können. Das wäre das richtige für Joseph. Wähle das richtige Objekt aus!",
 			{"Choice":{
 				"Apfel":{
 				"Text": "Apfel",
@@ -413,9 +413,9 @@ let script = {
 	],
 	"JosephScene2": [
 			"d Und diese Bekanntschaften müssen sich nach studentischer Manier natürlich alle ins Stammbuch eintragen. Anselm Feuerbach bat mich, Ihnen Ihr Stammbuch zu geben.",
-			"b Der gute Anselm! Ich freue mich schon darauf, zu lesen, wie er sich verewigt hat. A propos verewigen: Haben Sie schon die Zeichnung Ernst Welkers gesehen? Er hat mich als Hering gezeichnet.",
 			// Erhählt Karikatur
 			"show KarikaturJ",
+			"b Der gute Anselm! Ich freue mich schon darauf, zu lesen, wie er sich verewigt hat. A propos verewigen: Haben Sie schon die Zeichnung Ernst Welkers gesehen? Er hat mich als Hering gezeichnet.",
 			"hide KarikaturJ",
 			"jump PaulinchenScene"
 	],
@@ -430,7 +430,7 @@ let script = {
 	],
 	// Item muss ausgewählt werden = Noten richtig
 	"SixthChoice": [
-		"d Wähle das passende Item aus.",
+		"d Musik liegt in der Luft… Wähle das richtige Objekt aus!",
 			{"Choice":{
 				"Apfel":{
 				"Text": "Apfel",
@@ -481,47 +481,52 @@ let script = {
 		"d Ach Herr Welker! Ich genieße es einfach so viele tolle Persönlichkeiten unter meinem Dach zu haben. Nun lasse ich euch weiter malen. Es kommen ja noch mehr Gäste und der Tag ist noch nicht zu Ende...",
 		"w Ach wie nett, gerne dürfen Sie auch einen Blick in meine restlichen Werke werfen.",
 		"d Mit Vergnügen, vielen Dank!",
-		"jump SammelalbumScene1",
+		"hide d",
+		"jump Info",
 	],
 
+	"Info": [
+		"scene background",
+		"d Nachfolgend kannst du  noch die restlichen Zeichnungen von Herrn Welker begutachten. Um mich auszublenden klick unten im Menü auf 'Ausblenden'.",
+		"jump SammelalbumScene1"
+	],
 	//Neue Scene Sammelalbum
 	"SammelalbumScene1": [
 		"scene Sammelalbum1 with fadeIn",
-		"d Klicke auf 'Hide' um mich unsichtbar zu machen, klicke in den Bildschirm für die nächste Seite.",
+		"d Nachfolgend kannst du  noch die restlichen Zeichnungen von Herrn Welker begutachten. Um mich auszublenden klicke unten im Menü auf 'Ausblenden'.",
 		"jump SammelalbumScene2"
 	],
 	"SammelalbumScene2": [
 		"scene Sammelalbum2 with fadeIn",
-		"d Klicke auf 'Hide' um mich unsichtbar zu machen, klicke in den Bildschirm für die nächste Seite.",
+		"d Nachfolgend kannst du  noch die restlichen Zeichnungen von Herrn Welker begutachten. Um mich auszublenden klicke unten im Menü auf 'Ausblenden'.",
 		"jump SammelalbumScene3"
 	],
 	"SammelalbumScene3": [
 		"scene Sammelalbum3 with fadeIn",
-		"d Klicke auf 'Hide' um mich unsichtbar zu machen, klicke in den Bildschirm für die nächste Seite.",
+		"d Nachfolgend kannst du  noch die restlichen Zeichnungen von Herrn Welker begutachten. Um mich auszublenden klicke unten im Menü auf 'Ausblenden'.",
 		"jump SammelalbumScene4"
 	],
 	"SammelalbumScene4": [
 		"scene Sammelalbum4 with fadeIn",
-		"d Klicke auf 'Hide' um mich unsichtbar zu machen, klicke in den Bildschirm für die nächste Seite.",
+		"d Nachfolgend kannst du  noch die restlichen Zeichnungen von Herrn Welker begutachten. Um mich auszublenden klicke unten im Menü auf 'Ausblenden'.",
 		"jump SammelalbumScene5"
 	],
 	"SammelalbumScene5": [
 		"scene Sammelalbum5 with fadeIn",
-		"d Klicke auf 'Hide' um mich unsichtbar zu machen, klicke in den Bildschirm für die nächste Seite.",
+		"d Nachfolgend kannst du  noch die restlichen Zeichnungen von Herrn Welker begutachten. Um mich auszublenden klicke unten im Menü auf 'Ausblenden'.",
 		"jump SammelalbumScene6"
 	],
 	"SammelalbumScene6": [
 		"scene Sammelalbum6 with fadeIn",
-		"d Klicke auf 'Hide' um mich unsichtbar zu machen, klicke in den Bildschirm für die nächste Seite.",
+		"d Nachfolgend kannst du  noch die restlichen Zeichnungen von Herrn Welker begutachten. Um mich auszublenden klicke unten im Menü auf 'Ausblenden'.",
 		"jump SammelalbumScene7"
 	],
 	"SammelalbumScene7": [
 		"scene Sammelalbum7 with fadeIn",
-		"d Klicke auf 'Hide' um mich unsichtbar zu machen, klicke in den Bildschirm für die nächste Seite.",
+		"d Nachfolgend kannst du  noch die restlichen Zeichnungen von Herrn Welker begutachten. Um mich auszublenden klicke unten im Menü auf 'Ausblenden'.",
 		"jump SammelalbumScene8"
 	],
 	"SammelalbumScene8": [
-		"d Ende",
 		"scene Sammelalbum8 with fadeIn",
 	],
 

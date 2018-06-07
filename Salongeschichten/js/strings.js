@@ -19,7 +19,7 @@
 const strings = {
 
 	"English": {
-		"AdvanceHelp": "To advance through the game, press the space key or click.",
+		"AdvanceHelp": "Um im Spiel voranzukommen, betätige die Leertaste!",
 		"Audio": "Audio",
 		"AutoPlay": "Auto",
 		"AutoPlaySpeed": "Autoplay Speed",
@@ -27,27 +27,28 @@ const strings = {
 		"Back": "Back",
 		"BackButton": "Back.",
 
-		"Cancel": "Cancel",
+		"Cancel": "Abbrechen",
 		"Close": "Close",
-		"Confirm": "Do you want to quit?",
+		"Confirm": "Möchten Sie das Spiel wirklich beenden?",
 
 		"FullScreen": "Full Screen",
 
-		"Help": "Help",
-		"Hide": "Hide",
-		"HideButton": "Hide Text.",
+		"Help": "Hilfe",
+		"Hide": "Ausblenden",
+		"HideButton": "Text ausblenden.",
 
 		"iOSAudioWarning": "Audio settings are not supported on iOS.",
 
 		"Language": "Language",
-		"Load": "Load",
+		"Load": "Laden",
 		"LoadAutoSaveSlots": "Auto Saved Games",
-		"LoadButton": "Open the Load Screen.",
+		"LoadButton": "Ladebildschirm öffnen.",
 		"Loading": "Loading",
 		"LoadingMessage": "Wait while the assets are loaded.",
 		"LoadSlots": "Saved Games",
 		"LocalStorageWarning": "Local Storage is not available in this browser.",
 
+		"Info": "Info",
 		"Music": "Music Volume",
 
 		"NoSavedGames": "No saved games.",
@@ -56,16 +57,16 @@ const strings = {
 		"Overwrite": "Overwrite",
 
 		"QuickButtons": "Quick Menu Buttons",
-		"Quit": "Quit",
-		"QuitButton": "Quit Game.",
+		"Quit": "Beenden",
+		"QuitButton": "Spiel beenden.",
 
 		"Resolution": "Resolution",
 
-		"Save": "Save",
-		"SaveButon": "Open the Save Screen.",
+		"Save": "Speichern",
+		"SaveButon": "Speicherbildschirm öffnen",
 		"SaveInSlot": "Save in slot",
-		"Settings": "Settings",
-		"SettingsButton": "Open the Settings Screen.",
+		"Settings": "Einstellungen",
+		"SettingsButton": "Einstellungsbildschirm öffnen.",
 		"Show": "Show",
 		"SlotDeletion": "Are you sure you want to delete this slot?",
 		"SlotOverwrite": "Are you sure you want to overwrite this slot?",

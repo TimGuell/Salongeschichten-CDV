@@ -1139,12 +1139,14 @@ $_ready(function () {
 					$_(this).parent ().find ("[data-string]").text (getLocalizedString ("Show"));
 					$_("[data-ui='quick-menu']").addClass ("transparent");
 					$_("[data-ui='text']").hide();
+					$_("[data-ui='gesicht']").hide();
 				} else if ($_(this).hasClass("fa-eye-slash")) {
 					$_(this).removeClass("fa-eye-slash");
 					$_(this).addClass("fa-eye");
 					$_(this).parent ().find ("[data-string]").text (getLocalizedString ("Hide"));
 					$_("[data-ui='quick-menu']").removeClass ("transparent");
 					$_("[data-ui='text']").show();
+					$_("[data-ui='gesicht']").show();
 				} else if ($_(this).text () === getLocalizedString ("Show")) {
 					$_(this).text (getLocalizedString("Hide"));
 					$_(this).parent ().find (".fa").removeClass ("fa-eye-slash");
@@ -1157,6 +1159,8 @@ $_ready(function () {
 					$_(this).parent ().find (".fa").addClass ("fa-eye-slash");
 					$_("[data-ui='quick-menu']").addClass ("transparent");
 					$_("[data-ui='text']").hide ();
+					$_("[data-ui='gesicht']").hide ();
+
 				}
 				break;
 
