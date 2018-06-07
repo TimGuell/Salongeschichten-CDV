@@ -440,7 +440,9 @@ textarea {
 [data-menu="load"] {
     background-image: url("../img/papier_hg.jpg");
 }
-
+[data-menu="help"] {
+    background-image: url("../img/papier_hg.jpg");
+}
 
 [data-ui="slots"] figure {
 	width: 20vmax;

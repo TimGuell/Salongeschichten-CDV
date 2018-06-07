@@ -127,7 +127,7 @@ const characters = {
 	   }
 ,
 	"w": {
-   	   "Name": "Welcker",
+   	   "Name": "Welker",
    	   "Color": "#5bcaff",
    			"Face": "welcker_klein.PNG"
    		   }
@@ -155,7 +155,7 @@ let script = {
 		"d Mal schauen, ob schon alles in meinem Vorratsschrank vorhanden ist.",
 		"play sound Schrank",
 		"show Inventar center with fadeIn",
-		"d Ah... Ein Tintengeschirr mit Feder, ein köstlicher Apfel, ein Stammbuch, Notenblätter, das Modell eines Tempels aus Kork sowie eine antike Vase...Es ist für alles gesorgt. Egal ob Dame oder Herr [...]",
+		"d Ah... Ein Tintengeschirr mit Feder, ein köstlicher Apfel, ein Stammbuch, Notenblätter, das Modell eines Tempels aus Kork sowie eine antike Vase... Es ist für alles gesorgt. Egal ob Dame oder Herr ...",
 		"stop sound",
 		"jump WelkerScene"
 	],
