@@ -124,7 +124,7 @@ select {
 
 #game img {
 	position: absolute;
-	max-height: 90%;
+	max-height: 100%;
         
 }
 
@@ -297,6 +297,19 @@ textarea {
         margin-right: auto;
 }
 
+[data-ui="choicesr"] {
+	display: block;
+        float:right;
+	z-index: 11;
+	max-height: 100vh;
+	overflow-y: auto;
+	height: auto;
+	width: 100vw;
+	margin: -130px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
 [data-ui="choices"] button {
 	margin: 0.5em;
 	padding: 0.5em;
@@ -306,14 +319,26 @@ textarea {
 	color: rgb(255, 255, 255);
 }
 
+
+[data-ui="gesicht"] {
+	display: block;
+	z-index: 11;
+	max-height: 100vh;
+	overflow-y: auto;
+	height: auto;
+	width: 100vw;
+	margin: -100px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
 [data-ui="face"] {
 	display: inline-block;
-	float: left;
+        float:left;
         bottom: 300px;
 	max-height: 20% !important;
 	position: initial !important;
 }
-
 
 
 [data-ui="text"] {
