@@ -311,7 +311,7 @@ let script = {
 				"Do": "jump falsch3"
 			},
 				"Vase":{
-				"Text": "Vase.",
+				"Text": "Vase",
 				"Do": "jump HerzogScene2"
 			}
 		}}
