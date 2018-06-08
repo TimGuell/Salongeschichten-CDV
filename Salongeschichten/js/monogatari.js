@@ -71,6 +71,12 @@ $_ready(function () {
 	 * ======================
 	 **/
 
+	 var counter = 0;
+	  function add(counter){
+	      counter = counter + 1;
+
+	  };
+
 	function fixOptions () {
 		fixSettings ();
 		fixEngine ();
